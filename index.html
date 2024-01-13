@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the HTML document -->
+    <title>StopWatch</title>
+
+    <!-- CSS Link Files -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Icons File - Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <!-- Icons for Light and Dark mode -->
+        <div class="icons">
+            <i class="fa fa-sun"></i>
+            <i class="fa fa-moon"></i>
+        </div>
+        <!-- Mode Display -->
+        <div class="mode">
+            <p>Light Mode</p>
+        </div>
+        <!-- Toggle Button for Light/Dark Mode -->
+        <div class="toggle-btn">
+            <div class="switch"></div>
+        </div>
+    </div>
+
+    <!-- Stopwatch Section -->
+    <div class="stop-timer">
+        <!-- Timer Display 1 -->
+        <div class="timer1">
+            <p id="startTimeDisplay">00:00:00.00</p>
+            <!-- Labels for Hour, Minute, Second -->
+            <div class="time-name">
+                <p>Hour</p>
+                <p>Minute</p>
+                <p>Second</p>
+            </div>
+        </div>
+        <!-- Timer Display 2 -->
+        <div class="timer2">
+            <p>00:00:00</p>
+        </div>
+        <!-- Buttons for Play, Pause, Flag, Replay -->
+        <div class="icons-btn">
+            <i class="fa-solid fa-play " id="play" onclick="play()"></i>
+            <i class="fa-solid fa-pause" id="pause" onclick="pause()"></i>
+            <i class="fa-solid fa-flag disable" id="flag" onclick="flag()"></i>
+            <i class="fa-solid fa-rotate-left disable" id="replay" onclick="replay()"></i>
+        </div>
+    </div>
+
+    <!-- Lap Time Table Section -->
+    <div class="table-description">
+        <!-- Table Header for Lap, Time, Total -->
+        <div class="table-header">
+            <p>Lap</p>
+            <p>Time</p>
+            <p>Total</p>
+        </div>
+        <!-- Horizontal Line -->
+        <hr>
+        <!-- Table for Lap Information -->
+        <div class="table-info">
+            <div class="table">
+                <!-- Placeholder for Lap Information -->
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- JavaScript File -->
+<script src="index.js"></script>
+
+</html>
